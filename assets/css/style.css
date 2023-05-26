@@ -10,6 +10,10 @@
     background-color: #231f20;
 }
 
+.white-font {
+    color: #eaeaea;
+}
+
 /* ------------------------------ Header & Nav */
 
 nav {
@@ -98,4 +102,5 @@ nav {
 #welcome-section {
     height: 500px;
     width: 100%;
+    padding: 20px 5px;
 }

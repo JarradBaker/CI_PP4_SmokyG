@@ -1,3 +1,6 @@
+/* ------------------------------ Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* ------------------------------ Global and box hack */
 * {
     box-sizing: border-box;
@@ -101,7 +104,30 @@ nav {
 
 /* ------------------------------ Welcome Section */
 #welcome-section {
-    height: 500px;
+    height: auto;
     width: 100%;
-    padding: 20px 5px;
+    padding: 20px 5px 50px 5px;
+    text-align: center;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-family: 'lobster two', cursive;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+p.white-font {
+    font-family: 'lobster two', cursive;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+/* ------------------------------ Product Highlights Section */
+#product-highlights {
+    height: auto;
+    width: 100%;
+    padding: 20px 5px 50px 5px;
+    text-align: center;
 }

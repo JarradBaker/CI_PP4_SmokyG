@@ -131,3 +131,29 @@ p.white-font {
     padding: 20px 5px 50px 5px;
     text-align: center;
 }
+
+.img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-highlight-img {
+    width: 320px;
+    height: 320px;
+    margin: 15px 0;
+}
+
+.ph1 {
+    background-size: cover;
+    background-image: url(../img/product1.jpeg);
+}
+.ph2 {
+    background-size: cover;
+    background-image: url(../img/product2.jpeg);
+}
+.ph3 {
+    background-size: cover;
+    background-image: url(../img/product3.jpeg);
+}

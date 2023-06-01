@@ -128,7 +128,7 @@ p.white-font {
 #product-highlights {
     height: auto;
     width: 100%;
-    padding: 20px 5px 50px 5px;
+    padding: 20px 0 50px 0;
     text-align: center;
 }
 
@@ -156,4 +156,31 @@ p.white-font {
 .ph3 {
     background-size: cover;
     background-image: url(../img/product3.jpeg);
+}
+
+
+/* ------------------------------- Footer */
+footer {
+    text-align: center;
+}
+
+.social-media {
+padding: 10px 0;
+display: flex;
+justify-content: space-evenly;
+}
+
+.social-media i {
+    color: #fff;
+    font-size: 36px;
+}
+
+.copyright {
+    padding: 10px 0;
+}
+
+.copyright p {
+    font-family: 'lobster two', cursive;
+    font-weight: 300;
+    font-size: 24px;
 }

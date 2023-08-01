@@ -83,7 +83,7 @@ nav {
     flex-flow: row;
 }
 
-.nav-links.hidden {
+.nav-links {
     display: none;
 }
 
@@ -158,6 +158,8 @@ p.white-font {
     background-image: url(../img/product3.jpeg);
 }
 
+/* ------------------------------- Blog */
+
 
 /* ------------------------------- Footer */
 footer {
@@ -183,4 +185,14 @@ justify-content: space-evenly;
     font-family: 'lobster two', cursive;
     font-weight: 300;
     font-size: 24px;
+}
+
+/* ------------------------------- Media Queries */
+@media screen and ( min-width: 500px ) {
+    .flex-container {
+        display: none;
+    }
+    .nav-links {
+        display: flex;
+    }
 }

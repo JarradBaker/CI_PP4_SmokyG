@@ -29,6 +29,11 @@ nav {
     margin: 0;
 }
 
+nav a {
+    width: 80px;
+    height: 80px;
+}
+
 .logo {
     width: 80px;
     height: 80px;
@@ -77,18 +82,19 @@ nav {
 .nav-links {
     list-style: none;
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     flex-flow: row;
 }
 
-.nav-links {
-    display: none;
-}
-
 .nav-item a {
     text-decoration: none;
+    color: #FFFF00;
+}
+
+.nav-item a:hover {
+    transition: ease-in-out 1s;
     color: red;
 }
 
@@ -164,10 +170,11 @@ p.white-font {
 /* ------------------------------- Footer */
 footer {
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .social-media {
-padding: 10px 0;
+padding: 20px 0;
 display: flex;
 justify-content: space-evenly;
 }
@@ -189,10 +196,24 @@ justify-content: space-evenly;
 
 /* ------------------------------- Media Queries */
 @media screen and ( min-width: 500px ) {
+    nav {
+        padding: 0 25px;
+    }
     .flex-container {
         display: none;
     }
     .nav-links {
         display: flex;
     }
+    #hero-section {
+        background-size: contain;
+        height: 500px;
+        margin: 0 auto;
+    }
+}
+
+/*------------------------------- BLOG */
+#blog {
+    display: grid;
+    grid-template-columns: 1fr;
 }

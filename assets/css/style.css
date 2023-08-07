@@ -97,17 +97,24 @@ nav a {
     height: 100%;
     display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     flex-flow: row;
+    z-index: 9;
 }
 
 .nav-links-mobile.hide {
     display: none;
 }
 
+.hide {
+    display: none !important;
+}
+
 .nav-item a {
     text-decoration: none;
     color: #FFFF00;
+    text-align: center;
 }
 
 .nav-item a:hover {
@@ -182,6 +189,35 @@ p.white-font {
 }
 
 /* ------------------------------- Blog */
+.blog-post-tile {
+    width: 100%;
+    height: 300px;
+    padding: 10%;
+}
+
+.blog-post-img-container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+img.tile-img {
+    width: 100%;
+    height: 80%;
+    background-color: blue;
+    padding: 0;
+    margin: 0;
+}
+
+.tile-span {
+    width: 100%;
+    height: 10%;
+    background-color: red;
+    padding: 0;
+    margin: 0;
+}
 
 
 /* ------------------------------- Footer */
@@ -217,8 +253,13 @@ justify-content: space-evenly;
         flex-direction: column;
     }
     .nav-item {
+        text-align: center;
         width: 100%;
-        background-color: red;
+        background-color: #231f20;
+        padding: 10px 0;
+        font-size: 1.5rem;
+        font-family: 'lobster two', cursive;
+        font-weight: bold;
     }
 }
 

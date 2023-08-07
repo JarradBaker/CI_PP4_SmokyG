@@ -8,6 +8,6 @@ hamburger.addEventListener('click', () => {
     if(navLinksMobile.getAttribute('class', 'hide')){
         navLinksMobile.removeAttribute('class', 'hide');
     } else {
-        navLinksMobile.setAttribute('class', 'hide');
+        navLinksMobile.classList.add('hide');
     } 
 } );

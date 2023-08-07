@@ -11,12 +11,13 @@
 </head>
 
 <body>
-    <!--     HEADER     -->
     <header>
         <nav>
-            <a href="index.html"><div class="logo"></div></a>
+            <a href="index.html">
+                <div class="logo"></div>
+            </a>
             <!-- Nav Bar -->
-            <ul class="navbar">
+            <div class="navbar">
                 <!-- hamburger menu for mobile devices -->
                 <div class="flex-container">
                     <div class="hamburger">
@@ -27,25 +28,49 @@
                 </div>
                 
                 <!-- nav links for larger devices -->
-                <div class="nav-links">
+                <ul class="nav-links hide">
                     <li class="nav-item"><a href="index.html">Home</a></li>
                     <li class="nav-item"><a href="blog.html">Blog</a></li>
                     <li class="nav-item"><a href="booking.html">Booking</a></li>
                     <li class="nav-item"><a href="contact.html">Contact</a></li>
-                </div>
-
-            </ul>
+                </ul>
+            </div>
         </nav>
+        <ul class="nav-links-mobile hide">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="blog.html">Blog</a></li>
+            <li class="nav-item"><a href="booking.html">Booking</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
     </header>
 
     <!--     CONTENT      -->
     <section id="blog" class="grey-background">
         <!-- {% for post in post_list %} -->
-        <div class="blog-post-tile">
-            <div class="img-container">
-                <img class="tile-img" src=" {{ post.featured_image.url }} " alt="">
+        <div class="blog-post-tile grey-background">
+            <div class="blog-post-img-container">
                 <div class="tile-span">
-                    <span>Author: {{ post.author }}</span>
+                    <span class="white-font">{{ post.title }}</span>
+                </div>
+                <img class="tile-img" src="" alt="">
+                <div class="tile-span">
+                    <span class="white-font">Author: {{ post.author }}</span>
+                </div>
+            </div>
+
+        </div>
+        <!-- {% endfor %} -->
+
+
+        <!-- {% for post in post_list %} -->
+        <div class="blog-post-tile grey-background">
+            <div class="blog-post-img-container">
+                <div class="tile-span">
+                    <span class="white-font">{{ post.title }}</span>
+                </div>
+                <img class="tile-img" src="" alt="">
+                <div class="tile-span">
+                    <span class="white-font">Author: {{ post.author }}</span>
                 </div>
             </div>
 
@@ -53,8 +78,6 @@
         <!-- {% endfor %} -->
     </section>
 
-    
-    <!--     FOOTER     -->
     <footer class="grey-background">
         <div class="social-media">
             <i class="fa-brands fa-instagram"></i>
@@ -65,6 +88,10 @@
             <p>Smoky G Copyright 2023 <i class="fa-regular fa-copyright"></i></p>
         </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
+
+    
